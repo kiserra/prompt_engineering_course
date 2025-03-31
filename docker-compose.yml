@@ -1,11 +1,9 @@
-version: '3'
+version: '3.8'
 
 services:
-  prompt-engineering-course:
-    build:
-      context: .
+  web:
+    build: .
     ports:
-      - "8080:80"
-    environment:
-      - GEMINI_API_KEY=YOUR_API_KEY
-    restart: unless-stopped
+      - "8080:8080"
+    env_file:
+      - .env
