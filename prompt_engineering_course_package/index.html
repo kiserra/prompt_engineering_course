@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Kurs für SOC-Teams</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prompt Engineering Kurs für SOC-Teams</h1>
+            <div class="language-switcher">
+                <button id="de-btn" class="active">Deutsch</button>
+                <button id="en-btn">English</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="course-intro">
+            <h2>Willkommen zum Prompt Engineering Kurs</h2>
+            <p>Dieser Kurs wurde speziell für SOC-Teams entwickelt, um die Fähigkeiten im Bereich Prompt Engineering mit Google Studio AI und Gemini zu verbessern.</p>
+            <p>Jede Lektion dauert ca. 15-20 Minuten und enthält interaktive Übungen und Challenges.</p>
+        </section>
+
+        <section id="lessons">
+            <h2>Lektionen</h2>
+            <div class="lesson-grid">
+                <div class="lesson-card" data-lesson="1">
+                    <h3>Lektion 1</h3>
+                    <h4>Grundlagen des Prompt Engineering</h4>
+                    <p>Verstehen, was Prompts sind und wie sie funktionieren. Kennenlernen der verschiedenen Prompt-Typen.</p>
+                    <a href="#" class="btn" data-lesson-id="1">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="2">
+                    <h3>Lektion 2</h3>
+                    <h4>Instruction Prompts für SOC-Teams</h4>
+                    <p>Effektive Anweisungen für Gemini formulieren können. SOC-spezifische Instruction Prompts erstellen.</p>
+                    <a href="#" class="btn" data-lesson-id="2">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="3">
+                    <h3>Lektion 3</h3>
+                    <h4>Kontext und Beispiele in Prompts</h4>
+                    <p>Die Rolle von Kontext in Prompts verstehen. Beispiele effektiv in Prompts einbauen.</p>
+                    <a href="#" class="btn" data-lesson-id="3">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="4">
+                    <h3>Lektion 4</h3>
+                    <h4>Fortgeschrittene Prompt-Techniken</h4>
+                    <p>Fortgeschrittene Prompt-Strategien kennenlernen. Komplexe Aufgaben durch Prompts lösen.</p>
+                    <a href="#" class="btn" data-lesson-id="4">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="5">
+                    <h3>Lektion 5</h3>
+                    <h4>Prompt Engineering für Sicherheitsanalysen</h4>
+                    <p>Prompts für Sicherheitsanalysen optimieren. Gemini für SOC-Aufgaben effektiv einsetzen.</p>
+                    <a href="#" class="btn" data-lesson-id="5">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="6">
+                    <h3>Lektion 6</h3>
+                    <h4>Gemini API Integration und Automatisierung</h4>
+                    <p>Gemini API in Workflows integrieren. Prompt-basierte Automatisierung verstehen.</p>
+                    <a href="#" class="btn" data-lesson-id="6">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="7">
+                    <h3>Lektion 7</h3>
+                    <h4>Prompt Engineering Best Practices und Fallstricke</h4>
+                    <p>Häufige Fehler beim Prompt Engineering vermeiden. Prompts systematisch verbessern.</p>
+                    <a href="#" class="btn" data-lesson-id="7">Zur Lektion</a>
+                </div>
+                <div class="lesson-card" data-lesson="8">
+                    <h3>Lektion 8</h3>
+                    <h4>Abschlussprojekt - SOC Prompt Engineering Challenge</h4>
+                    <p>Das Gelernte in einem praxisnahen Projekt anwenden. Komplexe SOC-Aufgaben mit Prompt Engineering lösen.</p>
+                    <a href="#" class="btn" data-lesson-id="8">Zur Lektion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lesson-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="lesson-container"></div>
+            <div id="exercise-container"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Prompt Engineering Kurs für SOC-Teams</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gemini-api.js"></script>
+</body>
+</html>

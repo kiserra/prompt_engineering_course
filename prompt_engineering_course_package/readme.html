@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Kurs für SOC-Teams - Readme</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .note {
+            background-color: #e7f5fe;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fff5e6;
+            border-left: 4px solid #e67e22;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prompt Engineering Kurs für SOC-Teams</h1>
+    
+    <p>Willkommen zum Prompt Engineering Kurs für SOC-Teams! Dieser Kurs wurde entwickelt, um Mitgliedern von Security Operations Centern (SOC) die Fähigkeiten im Bereich Prompt Engineering mit Google Studio AI und Gemini zu vermitteln.</p>
+
+    <div class="note">
+        <strong>Hinweis:</strong> Dieser Kurs ist zweisprachig (Deutsch und Englisch) und enthält interaktive Übungen, die eine Verbindung zur Gemini API erfordern.
+    </div>
+
+    <h2>Kursübersicht</h2>
+    
+    <p>Der Kurs besteht aus 8 Lektionen, die jeweils etwa 15-20 Minuten dauern und interaktive Übungen sowie Challenges enthalten:</p>
+    
+    <ol>
+        <li><strong>Grundlagen des Prompt Engineering</strong> - Verstehen, was Prompts sind und wie sie funktionieren</li>
+        <li><strong>Instruction Prompts für SOC-Teams</strong> - Effektive Anweisungen für Gemini formulieren</li>
+        <li><strong>Kontext und Beispiele in Prompts</strong> - Die Rolle von Kontext verstehen und Beispiele effektiv einbauen</li>
+        <li><strong>Fortgeschrittene Prompt-Techniken</strong> - Komplexe Aufgaben durch Prompts lösen</li>
+        <li><strong>Prompt Engineering für Sicherheitsanalysen</strong> - Gemini für SOC-Aufgaben effektiv einsetzen</li>
+        <li><strong>Gemini API Integration und Automatisierung</strong> - Prompt-basierte Automatisierung verstehen</li>
+        <li><strong>Prompt Engineering Best Practices und Fallstricke</strong> - Häufige Fehler vermeiden</li>
+        <li><strong>Abschlussprojekt - SOC Prompt Engineering Challenge</strong> - Das Gelernte in einem praxisnahen Projekt anwenden</li>
+    </ol>
+
+    <h2>Funktionen</h2>
+    
+    <ul>
+        <li><strong>Zweisprachiger Inhalt</strong> - Alle Lektionen sind sowohl auf Deutsch als auch auf Englisch verfügbar</li>
+        <li><strong>Sprachumschaltung</strong> - Nahtloser Wechsel zwischen den Sprachen per Knopfdruck</li>
+        <li><strong>Interaktive Übungen</strong> - Praktische Übungen mit der Gemini API</li>
+        <li><strong>SOC-spezifische Beispiele</strong> - Realistische Beispiele aus dem SOC-Umfeld</li>
+        <li><strong>Responsive Design</strong> - Optimiert für verschiedene Geräte</li>
+    </ul>
+
+    <h2>Installation und Einrichtung</h2>
+    
+    <h3>Voraussetzungen</h3>
+    
+    <ul>
+        <li>Webserver (lokal oder remote)</li>
+        <li>Gemini API-Schlüssel für die interaktiven Übungen</li>
+    </ul>
+
+    <h3>Einrichtung</h3>
+    
+    <ol>
+        <li>Laden Sie alle Kursdateien auf Ihren Webserver hoch</li>
+        <li>Öffnen Sie die Datei <code>js/gemini-api.js</code> und ersetzen Sie <code>YOUR_API_KEY</code> mit Ihrem Gemini API-Schlüssel:
+            <pre>const GEMINI_API_KEY = "YOUR_API_KEY";</pre>
+        </li>
+        <li>Öffnen Sie die Datei <code>index.html</code> in einem Webbrowser, um den Kurs zu starten</li>
+    </ol>
+
+    <div class="warning">
+        <strong>Wichtig:</strong> Aus Sicherheitsgründen sollten Sie in einer Produktionsumgebung den API-Schlüssel nicht direkt im Frontend-Code speichern. Verwenden Sie stattdessen einen Backend-Proxy oder eine sichere Umgebungsvariable.
+    </div>
+
+    <h2>Dateien und Verzeichnisse</h2>
+    
+    <ul>
+        <li><code>index.html</code> - Hauptseite des Kurses</li>
+        <li><code>css/styles.css</code> - Stylesheet für das Kursdesign</li>
+        <li><code>js/script.js</code> - Hauptskript für die Kurslogik</li>
+        <li><code>js/gemini-api.js</code> - Integration der Gemini API für interaktive Übungen</li>
+        <li><code>content/</code> - Verzeichnis mit den Kursinhalten
+            <ul>
+                <li><code>lesson1_de.md</code> bis <code>lesson8_de.md</code> - Deutsche Lektionen</li>
+                <li><code>lesson1_en.md</code> bis <code>lesson8_en.md</code> - Englische Lektionen</li>
+                <li><code>soc_prompt_examples.md</code> - Sammlung von SOC-spezifischen Prompt-Beispielen</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Anpassung</h2>
+    
+    <p>Sie können den Kurs an Ihre spezifischen Bedürfnisse anpassen:</p>
+    
+    <ul>
+        <li><strong>Lektionsinhalte</strong> - Bearbeiten Sie die Markdown-Dateien im <code>content/</code>-Verzeichnis</li>
+        <li><strong>Design</strong> - Passen Sie das Stylesheet <code>css/styles.css</code> an</li>
+        <li><strong>Übungen</strong> - Modifizieren Sie die Übungsszenarien in <code>js/gemini-api.js</code></li>
+        <li><strong>Prompt-Beispiele</strong> - Erweitern Sie die Sammlung in <code>soc_prompt_examples.md</code></li>
+    </ul>
+
+    <h2>Verwendung der Gemini API</h2>
+    
+    <p>Die interaktiven Übungen verwenden die Gemini API, um Feedback zu den von den Teilnehmern erstellten Prompts zu geben. Die API-Integration ist in der Datei <code>js/gemini-api.js</code> implementiert.</p>
+    
+    <p>Hauptfunktionen:</p>
+    
+    <ul>
+        <li><code>initExerciseInterface()</code> - Initialisiert die Übungsschnittstelle</li>
+        <li><code>handlePromptSubmission()</code> - Verarbeitet die Eingabe des Benutzers</li>
+        <li><code>callGeminiAPI()</code> - Sendet den Prompt an die Gemini API</li>
+        <li><code>generatePromptFeedback()</code> - Erzeugt Feedback zum erstellten Prompt</li>
+    </ul>
+
+    <h2>Kontakt und Support</h2>
+    
+    <p>Bei Fragen oder Problemen wenden Sie sich bitte an das Entwicklungsteam.</p>
+
+    <hr>
+    
+    <p>&copy; 2025 Prompt Engineering Kurs für SOC-Teams</p>
+</body>
+</html>
